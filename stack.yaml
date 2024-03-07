@@ -1,0 +1,14 @@
+resolver: lts-22.12
+compiler: ghc-9.4.8
+
+packages:
+- .
+
+extra-deps:
+- git: https://github.com/brendanhay/ede
+  commit: 041ef0b8bc273eb16da167716bc60337d7fcfaa1
+- aeson-2.2.1.0
+- attoparsec-aeson-2.2.0.1
+
+nix:
+  packages: [ zlib pkg-config ]
